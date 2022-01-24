@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E54931DC279EE0B4008B7EF0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54931DB279EE0B4008B7EF0 /* File.swift */; };
+		E54931DE279EE487008B7EF0 /* swift.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E54931DD279EE487008B7EF0 /* swift.pdf */; };
+		FC3345C6278EDB710077B95C /* SubjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345C5278EDB710077B95C /* SubjectCardView.swift */; };
+		FC3345C8278EFF210077B95C /* SubjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345C7278EFF200077B95C /* SubjectListView.swift */; };
+		FC3345CA278F07D70077B95C /* SubjectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345C9278F07D70077B95C /* SubjectsModel.swift */; };
+		FC3345CC27918C350077B95C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345CB27918C350077B95C /* DetailView.swift */; };
+		FC3345CE2791A2BB0077B95C /* NavigationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345CD2791A2BB0077B95C /* NavigationDetailView.swift */; };
+		FC524A3B278DC9F3009C93D3 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC524A3A278DC9F2009C93D3 /* NavigationBar.swift */; };
+		FC524A4A278DE344009C93D3 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A3D278DE344009C93D3 /* Roboto-Medium.ttf */; };
+		FC524A4B278DE344009C93D3 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A3E278DE344009C93D3 /* Roboto-Light.ttf */; };
+		FC524A4C278DE344009C93D3 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A3F278DE344009C93D3 /* Roboto-Regular.ttf */; };
+		FC524A52278DE344009C93D3 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC524A45278DE344009C93D3 /* LICENSE.txt */; };
+		FC524A54278DE344009C93D3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A47278DE344009C93D3 /* Roboto-Bold.ttf */; };
+		FC524A55278DE344009C93D3 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A48278DE344009C93D3 /* Roboto-Thin.ttf */; };
+		FC524A56278DE344009C93D3 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A49278DE344009C93D3 /* Roboto-Black.ttf */; };
+		FC524A6B278DE34D009C93D3 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A58278DE34D009C93D3 /* Poppins-ExtraLight.ttf */; };
+		FC524A6F278DE34D009C93D3 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A5C278DE34D009C93D3 /* Poppins-Light.ttf */; };
+		FC524A70278DE34D009C93D3 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A5D278DE34D009C93D3 /* Poppins-Medium.ttf */; };
+		FC524A73278DE34D009C93D3 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A60278DE34D009C93D3 /* Poppins-ExtraBold.ttf */; };
+		FC524A75278DE34D009C93D3 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC524A62278DE34D009C93D3 /* OFL.txt */; };
+		FC524A76278DE34D009C93D3 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A63278DE34D009C93D3 /* Poppins-Regular.ttf */; };
+		FC524A78278DE34D009C93D3 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A65278DE34D009C93D3 /* Poppins-Bold.ttf */; };
+		FC524A79278DE34D009C93D3 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A66278DE34D009C93D3 /* Poppins-Black.ttf */; };
+		FC524A7A278DE34D009C93D3 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A67278DE34D009C93D3 /* Poppins-Thin.ttf */; };
+		FC524A7B278DE34D009C93D3 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A68278DE34D009C93D3 /* Poppins-SemiBold.ttf */; };
+		FC524A7C278DE34D009C93D3 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A69278DE34D009C93D3 /* Poppins-Italic.ttf */; };
+		FC524A80278E16E7009C93D3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC524A7F278E16E7009C93D3 /* SearchBar.swift */; };
+		FCD368C327983133003C041D /* ChapterCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD368C227983133003C041D /* ChapterCapsule.swift */; };
+		FCEE41E9278CAADB00E313E1 /* EduAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEE41E8278CAADB00E313E1 /* EduAppApp.swift */; };
+		FCEE41EB278CAADB00E313E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEE41EA278CAADB00E313E1 /* ContentView.swift */; };
+		FCEE41ED278CAADD00E313E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEE41EC278CAADD00E313E1 /* Assets.xcassets */; };
+		FCEE41F0278CAADD00E313E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEE41EF278CAADD00E313E1 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E54931DB279EE0B4008B7EF0 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		E54931DD279EE487008B7EF0 /* swift.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = swift.pdf; sourceTree = "<group>"; };
+		FC3345C5278EDB710077B95C /* SubjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCardView.swift; sourceTree = "<group>"; };
+		FC3345C7278EFF200077B95C /* SubjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectListView.swift; sourceTree = "<group>"; };
+		FC3345C9278F07D70077B95C /* SubjectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsModel.swift; sourceTree = "<group>"; };
+		FC3345CB27918C350077B95C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FC3345CD2791A2BB0077B95C /* NavigationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDetailView.swift; sourceTree = "<group>"; };
+		FC524A3A278DC9F2009C93D3 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		FC524A3D278DE344009C93D3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		FC524A3E278DE344009C93D3 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		FC524A3F278DE344009C93D3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		FC524A45278DE344009C93D3 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		FC524A47278DE344009C93D3 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		FC524A48278DE344009C93D3 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		FC524A49278DE344009C93D3 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		FC524A58278DE34D009C93D3 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FC524A5C278DE34D009C93D3 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		FC524A5D278DE34D009C93D3 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		FC524A60278DE34D009C93D3 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FC524A62278DE34D009C93D3 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		FC524A63278DE34D009C93D3 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		FC524A65278DE34D009C93D3 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		FC524A66278DE34D009C93D3 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		FC524A67278DE34D009C93D3 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		FC524A68278DE34D009C93D3 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		FC524A69278DE34D009C93D3 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		FC524A7E278E0963009C93D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FC524A7F278E16E7009C93D3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		FCD368C227983133003C041D /* ChapterCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterCapsule.swift; sourceTree = "<group>"; };
+		FCEE41E5278CAADB00E313E1 /* EduApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEE41E8278CAADB00E313E1 /* EduAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduAppApp.swift; sourceTree = "<group>"; };
+		FCEE41EA278CAADB00E313E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCEE41EC278CAADD00E313E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCEE41EF278CAADD00E313E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCEE41E2278CAADB00E313E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC524A3C278DE344009C93D3 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				FC524A45278DE344009C93D3 /* LICENSE.txt */,
+				FC524A3D278DE344009C93D3 /* Roboto-Medium.ttf */,
+				FC524A3E278DE344009C93D3 /* Roboto-Light.ttf */,
+				FC524A3F278DE344009C93D3 /* Roboto-Regular.ttf */,
+				FC524A47278DE344009C93D3 /* Roboto-Bold.ttf */,
+				FC524A48278DE344009C93D3 /* Roboto-Thin.ttf */,
+				FC524A49278DE344009C93D3 /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		FC524A57278DE34D009C93D3 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				FC524A62278DE34D009C93D3 /* OFL.txt */,
+				FC524A58278DE34D009C93D3 /* Poppins-ExtraLight.ttf */,
+				FC524A5C278DE34D009C93D3 /* Poppins-Light.ttf */,
+				FC524A5D278DE34D009C93D3 /* Poppins-Medium.ttf */,
+				FC524A60278DE34D009C93D3 /* Poppins-ExtraBold.ttf */,
+				FC524A63278DE34D009C93D3 /* Poppins-Regular.ttf */,
+				FC524A65278DE34D009C93D3 /* Poppins-Bold.ttf */,
+				FC524A66278DE34D009C93D3 /* Poppins-Black.ttf */,
+				FC524A67278DE34D009C93D3 /* Poppins-Thin.ttf */,
+				FC524A68278DE34D009C93D3 /* Poppins-SemiBold.ttf */,
+				FC524A69278DE34D009C93D3 /* Poppins-Italic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		FCEE41DC278CAADB00E313E1 = {
+			isa = PBXGroup;
+			children = (
+				FCEE41E7278CAADB00E313E1 /* EduApp */,
+				FCEE41E6278CAADB00E313E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCEE41E6278CAADB00E313E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCEE41E5278CAADB00E313E1 /* EduApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCEE41E7278CAADB00E313E1 /* EduApp */ = {
+			isa = PBXGroup;
+			children = (
+				FC524A7E278E0963009C93D3 /* Info.plist */,
+				FC524A57278DE34D009C93D3 /* Poppins */,
+				FC524A3C278DE344009C93D3 /* Roboto */,
+				FCEE41E8278CAADB00E313E1 /* EduAppApp.swift */,
+				E54931DD279EE487008B7EF0 /* swift.pdf */,
+				FCEE41EA278CAADB00E313E1 /* ContentView.swift */,
+				FC3345CB27918C350077B95C /* DetailView.swift */,
+				E54931DB279EE0B4008B7EF0 /* File.swift */,
+				FCD368C227983133003C041D /* ChapterCapsule.swift */,
+				FC3345C5278EDB710077B95C /* SubjectCardView.swift */,
+				FC3345C7278EFF200077B95C /* SubjectListView.swift */,
+				FC3345C9278F07D70077B95C /* SubjectsModel.swift */,
+				FC524A3A278DC9F2009C93D3 /* NavigationBar.swift */,
+				FC3345CD2791A2BB0077B95C /* NavigationDetailView.swift */,
+				FC524A7F278E16E7009C93D3 /* SearchBar.swift */,
+				FCEE41EC278CAADD00E313E1 /* Assets.xcassets */,
+				FCEE41EE278CAADD00E313E1 /* Preview Content */,
+			);
+			path = EduApp;
+			sourceTree = "<group>";
+		};
+		FCEE41EE278CAADD00E313E1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FCEE41EF278CAADD00E313E1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCEE41E4278CAADB00E313E1 /* EduApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEE41F3278CAADD00E313E1 /* Build configuration list for PBXNativeTarget "EduApp" */;
+			buildPhases = (
+				FCEE41E1278CAADB00E313E1 /* Sources */,
+				FCEE41E2278CAADB00E313E1 /* Frameworks */,
+				FCEE41E3278CAADB00E313E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EduApp;
+			productName = EduApp;
+			productReference = FCEE41E5278CAADB00E313E1 /* EduApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCEE41DD278CAADB00E313E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FCEE41E4278CAADB00E313E1 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FCEE41E0278CAADB00E313E1 /* Build configuration list for PBXProject "EduApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCEE41DC278CAADB00E313E1;
+			productRefGroup = FCEE41E6278CAADB00E313E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCEE41E4278CAADB00E313E1 /* EduApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCEE41E3278CAADB00E313E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC524A55278DE344009C93D3 /* Roboto-Thin.ttf in Resources */,
+				FC524A52278DE344009C93D3 /* LICENSE.txt in Resources */,
+				FC524A56278DE344009C93D3 /* Roboto-Black.ttf in Resources */,
+				FC524A76278DE34D009C93D3 /* Poppins-Regular.ttf in Resources */,
+				FC524A54278DE344009C93D3 /* Roboto-Bold.ttf in Resources */,
+				FC524A73278DE34D009C93D3 /* Poppins-ExtraBold.ttf in Resources */,
+				FC524A6B278DE34D009C93D3 /* Poppins-ExtraLight.ttf in Resources */,
+				FC524A75278DE34D009C93D3 /* OFL.txt in Resources */,
+				FCEE41F0278CAADD00E313E1 /* Preview Assets.xcassets in Resources */,
+				FC524A78278DE34D009C93D3 /* Poppins-Bold.ttf in Resources */,
+				FCEE41ED278CAADD00E313E1 /* Assets.xcassets in Resources */,
+				E54931DE279EE487008B7EF0 /* swift.pdf in Resources */,
+				FC524A4C278DE344009C93D3 /* Roboto-Regular.ttf in Resources */,
+				FC524A7A278DE34D009C93D3 /* Poppins-Thin.ttf in Resources */,
+				FC524A6F278DE34D009C93D3 /* Poppins-Light.ttf in Resources */,
+				FC524A7C278DE34D009C93D3 /* Poppins-Italic.ttf in Resources */,
+				FC524A7B278DE34D009C93D3 /* Poppins-SemiBold.ttf in Resources */,
+				FC524A70278DE34D009C93D3 /* Poppins-Medium.ttf in Resources */,
+				FC524A4B278DE344009C93D3 /* Roboto-Light.ttf in Resources */,
+				FC524A79278DE34D009C93D3 /* Poppins-Black.ttf in Resources */,
+				FC524A4A278DE344009C93D3 /* Roboto-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCEE41E1278CAADB00E313E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEE41EB278CAADB00E313E1 /* ContentView.swift in Sources */,
+				FC3345CE2791A2BB0077B95C /* NavigationDetailView.swift in Sources */,
+				FC3345CC27918C350077B95C /* DetailView.swift in Sources */,
+				FC3345C8278EFF210077B95C /* SubjectListView.swift in Sources */,
+				FC524A80278E16E7009C93D3 /* SearchBar.swift in Sources */,
+				FCEE41E9278CAADB00E313E1 /* EduAppApp.swift in Sources */,
+				FC524A3B278DC9F3009C93D3 /* NavigationBar.swift in Sources */,
+				FCD368C327983133003C041D /* ChapterCapsule.swift in Sources */,
+				FC3345CA278F07D70077B95C /* SubjectsModel.swift in Sources */,
+				E54931DC279EE0B4008B7EF0 /* File.swift in Sources */,
+				FC3345C6278EDB710077B95C /* SubjectCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FCEE41F1278CAADD00E313E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCEE41F2278CAADD00E313E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCEE41F4278CAADD00E313E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EduApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6J9XRFD286;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EduApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alillo.EduApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCEE41F5278CAADD00E313E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EduApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6J9XRFD286;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EduApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alillo.EduApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCEE41E0278CAADB00E313E1 /* Build configuration list for PBXProject "EduApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEE41F1278CAADD00E313E1 /* Debug */,
+				FCEE41F2278CAADD00E313E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEE41F3278CAADD00E313E1 /* Build configuration list for PBXNativeTarget "EduApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEE41F4278CAADD00E313E1 /* Debug */,
+				FCEE41F5278CAADD00E313E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCEE41DD278CAADB00E313E1 /* Project object */;
+}
