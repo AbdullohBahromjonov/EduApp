@@ -24,7 +24,7 @@ struct SubjectCardView: View {
                     .foregroundColor(Color(red: 0.3137254901960784, green: 0.3137254901960784, blue: 0.3137254901960784))
                     .padding(.top, 6)
                 
-                Text("Chapters: \(subject.chapters)")
+                Text("Grade: \(subject.grade)")
                     .font(.custom("Poppins-SemiBold", size: 11))
                     .foregroundColor(Color(red: 0.4588235294117647, green: 0.4588235294117647, blue: 0.4588235294117647))
             }
@@ -35,7 +35,7 @@ struct SubjectCardView: View {
 
 struct SubjectCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SubjectCardView(subject: .constant(SubjectsModel(id: 1, image: "Math", name: "Mathmatics", chapters: 4)))
+        SubjectCardView(subject: .constant(SubjectsModel(id: 1, image: "Math", name: "Mathmatics", grade: 4, color: "Red")))
             .padding()
             .previewLayout(.sizeThatFits)
             .background(Color("Background"))

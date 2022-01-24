@@ -8,27 +8,14 @@
 import SwiftUI
 
 struct DetailView: View {
+    @Binding var subject: SubjectsModel
+    
     var body: some View {
         VStack {
             NavigationDetailView()
                 .padding(.bottom)
-            ScrollView(.vertical, showsIndicators: false) {
-                Image("Math")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: UIScreen.main.bounds.size.width*0.55)
-                    .padding()
-                
-                HStack {
-                    Text("Chapters")
-                        .font(.custom("Poppins-Bold", size: 23))
-                        .foregroundColor(.black)
-                    
-                    Spacer()
-                }
-                
-            }
-            .padding(.horizontal, 30)
+
+            PDFReader(book: .constant(subject.name))
             
             Spacer()
         }
@@ -37,6 +24,6 @@ struct DetailView: View {
 
 struct DetailView_Preivews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(subject: .constant(SubjectsModel(id: 1, image: "Math", name: "Algebra", grade: 9, color: "Red")))
     }
 }

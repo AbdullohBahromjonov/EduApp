@@ -11,5 +11,6 @@ struct SubjectsModel: Identifiable {
     let id: Int
     let image: String
     let name: String
-    let chapters: Int
+    let grade: Int
+    let color: String
 }
