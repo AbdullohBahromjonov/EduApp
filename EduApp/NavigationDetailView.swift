@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct NavigationDetailView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @Binding var heading: String
+    @Binding var color: String
+    
     var body: some View {
         HStack {
-            Text("Mathmatics")
+            Text(heading)
                 .font(.custom("Poppins-Bold", size: 25))
                 .foregroundColor(.white)
                 .padding(.leading, 30)
@@ -18,7 +22,9 @@ struct NavigationDetailView: View {
             Spacer()
             
             Button (
-                action: {},
+                action: {
+                    presentationMode.wrappedValue.dismiss()
+                },
                 label: {
                     Image("Back button")
                         .foregroundColor(.black)
@@ -31,13 +37,13 @@ struct NavigationDetailView: View {
         .background(
             ZStack {
                 RoundedRectangle(cornerRadius: 35)
-                    .foregroundColor(Color("Red").opacity(50))
+                    .foregroundColor(Color(color).opacity(50))
                     .offset(x: 0, y: 10)
                     .padding(.horizontal, 10)
                     .blur(radius: 20)
                 
                 RoundedRectangle(cornerRadius: 35)
-                    .foregroundColor(Color("Red"))
+                    .foregroundColor(Color(color))
             }
         )
     }
@@ -45,7 +51,7 @@ struct NavigationDetailView: View {
 
 struct NavigationDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationDetailView()
+        NavigationDetailView(heading: .constant("Mathmatics"), color: .constant("Green"))
             .padding()
             .padding(.bottom, 30)
             .background(Color("Background"))

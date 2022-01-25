@@ -17,7 +17,7 @@ struct SearchBar: View {
                 .padding(25)
             
         }
-        .frame(width: 315, height: 54)
+        .frame(width: UIScreen.main.bounds.size.width*0.9, height: 54)
         .background(
             Capsule()
                 .foregroundColor(Color.white)

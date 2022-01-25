@@ -12,7 +12,7 @@ struct DetailView: View {
     
     var body: some View {
         VStack {
-            NavigationDetailView()
+            NavigationDetailView(heading: .constant(subject.name), color: .constant(subject.color))
                 .padding(.bottom)
 
             PDFReader(book: .constant(subject.name))

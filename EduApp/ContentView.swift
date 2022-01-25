@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var text = ""
     @State var showDetail = false
+    @State var selectedSubject = SubjectsModel(id: 0, image: "", name: "", grade: 0, color: "")
     
     let columns = [
         GridItem(.flexible()),
@@ -18,12 +19,12 @@ struct ContentView: View {
     
     let subjects = [
         SubjectsModel(id: 1, image: "Math", name: "Algebra", grade: 9, color: "Red"),
-        SubjectsModel(id: 2, image: "Biology", name: "Biology", grade: 9, color: "Orange"),
-        SubjectsModel(id: 3, image: "Math", name: "Geometry", grade: 9, color: "Green"),
+        SubjectsModel(id: 2, image: "Biology", name: "Biology", grade: 9, color: "Green"),
+        SubjectsModel(id: 3, image: "Geometry", name: "Geometry", grade: 9, color: "Dark Blue"),
         SubjectsModel(id: 4, image: "Chemistry", name: "Chemistry", grade: 9, color: "Purple"),
         SubjectsModel(id: 5, image: "English", name: "English", grade: 9, color: "Blue"),
         SubjectsModel(id: 6, image: "History", name: "History", grade: 9, color: "Pink"),
-        SubjectsModel(id: 7, image: "Russian", name: "Russian", grade: 9, color: "Yellow")
+        SubjectsModel(id: 7, image: "Russian", name: "Russian", grade: 9, color: "Orange")
     ]
     
     
@@ -36,6 +37,10 @@ struct ContentView: View {
                     .padding(20)
                 
                 Image("Frame")
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: UIScreen.main.bounds.size.width*0.9, height: UIScreen.main.bounds.size.width*0.65)
+                    
+
                 
                 HStack {
                     Text("Subjects")
@@ -52,9 +57,11 @@ struct ContentView: View {
                             SubjectCardView(subject: .constant(subject))
                                 .onTapGesture {
                                     showDetail.toggle()
+                                    selectedSubject = subject
                                 }
-                                .sheet(isPresented: $showDetail) {
-                                    DetailView(subject: .constant(subject))
+                                .fullScreenCover(isPresented: $showDetail) {
+                                    DetailView(subject: $selectedSubject)
+                                        
                                 }
                         }
                     }
