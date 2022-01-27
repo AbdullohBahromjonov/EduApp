@@ -21,7 +21,7 @@ struct PDFReader: View {
         .overlay (
             RoundedRectangle(cornerRadius: 30)
                 .stroke(lineWidth: 5)
-                .foregroundColor(.black.opacity(0.7))
+                .foregroundColor(Color("Gray"))
                 .frame(width: UIScreen.main.bounds.size.width*0.9)
         )
     }

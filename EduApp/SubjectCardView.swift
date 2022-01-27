@@ -13,7 +13,7 @@ struct SubjectCardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 32)
-                .foregroundColor(.white)
+                .foregroundColor(Color("White"))
                 .shadow(color: Color("White panel shadow"), radius: 4, x: 0, y: 4)
             
             VStack {
@@ -21,7 +21,7 @@ struct SubjectCardView: View {
                 
                 Text(subject.name)
                     .font(.custom("Poppins-SemiBold", size: 14))
-                    .foregroundColor(Color(red: 0.3137254901960784, green: 0.3137254901960784, blue: 0.3137254901960784))
+                    .foregroundColor(Color("Gray"))
                     .padding(.top, 6)
                 
                 Text("Grade: \(subject.grade)")

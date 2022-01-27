@@ -45,7 +45,7 @@ struct ContentView: View {
                 HStack {
                     Text("Subjects")
                         .font(.custom("Poppins-bold", size: 23.11))
-                        .foregroundColor(.black)
+                        .foregroundColor(Color("Black"))
                     
                     Spacer()
                 }
@@ -53,7 +53,7 @@ struct ContentView: View {
                 
                 VStack {
                     LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(subjects) { subject in
+                        ForEach(subjects.filter({"\($0)".contains(text) || text.isEmpty})) { subject in
                             SubjectCardView(subject: .constant(subject))
                                 .onTapGesture {
                                     showDetail.toggle()
@@ -79,5 +79,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            //.preferredColorScheme(.dark)
     }
 }

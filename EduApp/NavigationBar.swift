@@ -47,7 +47,7 @@ struct NavigationBar: View {
         .frame(width: UIScreen.main.bounds.size.width, height: 100)
         .background(
             RoundedRectangle(cornerRadius: 35)
-                .foregroundColor(.white)
+                .foregroundColor(Color("White"))
                 .shadow(color: Color("White panel shadow"), radius: 20, x: 0, y: 20)
             )
         //.cornerRadius(35)

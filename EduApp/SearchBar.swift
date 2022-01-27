@@ -20,7 +20,7 @@ struct SearchBar: View {
         .frame(width: UIScreen.main.bounds.size.width*0.9, height: 54)
         .background(
             Capsule()
-                .foregroundColor(Color.white)
+                .foregroundColor(Color("White"))
                 .shadow(color: Color("White panel shadow"), radius: 20, x: 0, y: 20)
         )
     }

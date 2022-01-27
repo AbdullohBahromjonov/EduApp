@@ -3,6 +3,26 @@
     {
       "filename" : "Frame 1-1@3x.png",
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "filename" : "Frame 1-1@3x-1.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Frame 1.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {
