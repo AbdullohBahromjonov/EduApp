@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BB569CD27A85B23007FC166 /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB569CC27A85B23007FC166 /* PickerTextField.swift */; };
+		3BB66C1127A5BB4700C4A776 /* SubjectsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB66C1027A5BB4700C4A776 /* SubjectsData.swift */; };
+		3BB66C1727A5BCB500C4A776 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB66C1627A5BCB500C4A776 /* SignInView.swift */; };
 		E54931DC279EE0B4008B7EF0 /* PDFReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54931DB279EE0B4008B7EF0 /* PDFReader.swift */; };
 		E54931E7279F301F008B7EF0 /* Physics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E54931E1279F301E008B7EF0 /* Physics.pdf */; };
 		E54931E8279F301F008B7EF0 /* Russian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E54931E2279F301E008B7EF0 /* Russian.pdf */; };
@@ -40,7 +43,6 @@
 		FC524A7B278DE34D009C93D3 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A68278DE34D009C93D3 /* Poppins-SemiBold.ttf */; };
 		FC524A7C278DE34D009C93D3 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC524A69278DE34D009C93D3 /* Poppins-Italic.ttf */; };
 		FC524A80278E16E7009C93D3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC524A7F278E16E7009C93D3 /* SearchBar.swift */; };
-		FCD368C327983133003C041D /* ChapterCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD368C227983133003C041D /* ChapterCapsule.swift */; };
 		FCEE41E9278CAADB00E313E1 /* EduAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEE41E8278CAADB00E313E1 /* EduAppApp.swift */; };
 		FCEE41EB278CAADB00E313E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEE41EA278CAADB00E313E1 /* ContentView.swift */; };
 		FCEE41ED278CAADD00E313E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEE41EC278CAADD00E313E1 /* Assets.xcassets */; };
@@ -48,6 +50,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BB569CC27A85B23007FC166 /* PickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTextField.swift; sourceTree = "<group>"; };
+		3BB66C1027A5BB4700C4A776 /* SubjectsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsData.swift; sourceTree = "<group>"; };
+		3BB66C1627A5BCB500C4A776 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		E54931DB279EE0B4008B7EF0 /* PDFReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReader.swift; sourceTree = "<group>"; };
 		E54931E1279F301E008B7EF0 /* Physics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Physics.pdf; sourceTree = "<group>"; };
 		E54931E2279F301E008B7EF0 /* Russian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Russian.pdf; sourceTree = "<group>"; };
@@ -82,7 +87,6 @@
 		FC524A69278DE34D009C93D3 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		FC524A7E278E0963009C93D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FC524A7F278E16E7009C93D3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		FCD368C227983133003C041D /* ChapterCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterCapsule.swift; sourceTree = "<group>"; };
 		FCEE41E5278CAADB00E313E1 /* EduApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEE41E8278CAADB00E313E1 /* EduAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduAppApp.swift; sourceTree = "<group>"; };
 		FCEE41EA278CAADB00E313E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +105,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BB66C1227A5BBCD00C4A776 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BB66C1027A5BB4700C4A776 /* SubjectsData.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		3BB66C1327A5BBE000C4A776 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC524A7F278E16E7009C93D3 /* SearchBar.swift */,
+				FC3345CD2791A2BB0077B95C /* NavigationDetailView.swift */,
+				FC524A3A278DC9F2009C93D3 /* NavigationBar.swift */,
+				FC3345C5278EDB710077B95C /* SubjectCardView.swift */,
+				FC3345CB27918C350077B95C /* DetailView.swift */,
+				E54931DB279EE0B4008B7EF0 /* PDFReader.swift */,
+				FCEE41EA278CAADB00E313E1 /* ContentView.swift */,
+				3BB66C1627A5BCB500C4A776 /* SignInView.swift */,
+				3BB569CC27A85B23007FC166 /* PickerTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BB66C1427A5BBEE00C4A776 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC3345C9278F07D70077B95C /* SubjectsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BB66C1527A5BC4A00C4A776 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				E54931E4279F301F008B7EF0 /* History.pdf */,
+				E54931E3279F301F008B7EF0 /* English.pdf */,
+				E54931E6279F301F008B7EF0 /* Biology.pdf */,
+				E54931E5279F301F008B7EF0 /* Chemistry.pdf */,
+				E54931E2279F301E008B7EF0 /* Russian.pdf */,
+				E54931ED279F3111008B7EF0 /* Algebra.pdf */,
+				E54931EF279F3117008B7EF0 /* Geometry.pdf */,
+				E54931E1279F301E008B7EF0 /* Physics.pdf */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
 		FC524A3C278DE344009C93D3 /* Roboto */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,28 +203,15 @@
 		FCEE41E7278CAADB00E313E1 /* EduApp */ = {
 			isa = PBXGroup;
 			children = (
-				FC524A7E278E0963009C93D3 /* Info.plist */,
+				3BB66C1427A5BBEE00C4A776 /* Model */,
+				3BB66C1327A5BBE000C4A776 /* View */,
+				3BB66C1227A5BBCD00C4A776 /* View Model */,
+				3BB66C1527A5BC4A00C4A776 /* Books */,
 				FC524A57278DE34D009C93D3 /* Poppins */,
 				FC524A3C278DE344009C93D3 /* Roboto */,
-				E54931E6279F301F008B7EF0 /* Biology.pdf */,
-				E54931E1279F301E008B7EF0 /* Physics.pdf */,
-				E54931E3279F301F008B7EF0 /* English.pdf */,
-				E54931E4279F301F008B7EF0 /* History.pdf */,
-				E54931E5279F301F008B7EF0 /* Chemistry.pdf */,
-				E54931E2279F301E008B7EF0 /* Russian.pdf */,
-				E54931ED279F3111008B7EF0 /* Algebra.pdf */,
-				E54931EF279F3117008B7EF0 /* Geometry.pdf */,
 				FCEE41E8278CAADB00E313E1 /* EduAppApp.swift */,
-				FCEE41EA278CAADB00E313E1 /* ContentView.swift */,
-				FC3345CB27918C350077B95C /* DetailView.swift */,
-				E54931DB279EE0B4008B7EF0 /* PDFReader.swift */,
-				FCD368C227983133003C041D /* ChapterCapsule.swift */,
-				FC3345C5278EDB710077B95C /* SubjectCardView.swift */,
-				FC3345C9278F07D70077B95C /* SubjectsModel.swift */,
-				FC524A3A278DC9F2009C93D3 /* NavigationBar.swift */,
-				FC3345CD2791A2BB0077B95C /* NavigationDetailView.swift */,
-				FC524A7F278E16E7009C93D3 /* SearchBar.swift */,
 				FCEE41EC278CAADD00E313E1 /* Assets.xcassets */,
+				FC524A7E278E0963009C93D3 /* Info.plist */,
 				FCEE41EE278CAADD00E313E1 /* Preview Content */,
 			);
 			path = EduApp;
@@ -283,16 +321,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB66C1127A5BB4700C4A776 /* SubjectsData.swift in Sources */,
 				FCEE41EB278CAADB00E313E1 /* ContentView.swift in Sources */,
 				FC3345CE2791A2BB0077B95C /* NavigationDetailView.swift in Sources */,
 				FC3345CC27918C350077B95C /* DetailView.swift in Sources */,
 				FC524A80278E16E7009C93D3 /* SearchBar.swift in Sources */,
 				FCEE41E9278CAADB00E313E1 /* EduAppApp.swift in Sources */,
 				FC524A3B278DC9F3009C93D3 /* NavigationBar.swift in Sources */,
-				FCD368C327983133003C041D /* ChapterCapsule.swift in Sources */,
 				FC3345CA278F07D70077B95C /* SubjectsModel.swift in Sources */,
 				E54931DC279EE0B4008B7EF0 /* PDFReader.swift in Sources */,
+				3BB66C1727A5BCB500C4A776 /* SignInView.swift in Sources */,
 				FC3345C6278EDB710077B95C /* SubjectCardView.swift in Sources */,
+				3BB569CD27A85B23007FC166 /* PickerTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
