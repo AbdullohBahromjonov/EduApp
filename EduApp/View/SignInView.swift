@@ -14,82 +14,31 @@ struct SignInView: View {
     @State var password = ""
     @State private var lastSelectedIndex: Int?
     @State var showContentView = false
+    @State private var selectedLanguage: String = "Rus"
+    
+    var languages = ["Rus", "Uz"]
     
     var body: some View {
         ZStack {
+           
+            
             RoundedRectangle(cornerRadius: 30)
                 .foregroundColor(Color("White").opacity(0.7))
+                .frame(width: UIScreen.main.bounds.size.width*0.9, height: 517)
             VStack {
-                Text("Sign In")
-                    .font(.custom("Poppins-Bold", size: 25))
-                    .foregroundColor(Color("Black"))
+                PickerView()
                     .padding(.top, 20)
                     .padding()
                 
                 VStack(spacing: 15) {
-                    Capsule()
-                        .frame(width: UIScreen.main.bounds.size.width*0.8, height: 50)
-                        .foregroundColor(Color("White"))
-                        .shadow(color: Color("White panel shadow"), radius: 4, x: 0, y: 4)
-                        .overlay(
-                            HStack {
-                                Image(systemName: "envelope")
-                                    .foregroundColor(Color("Gray"))
-                                
-                                TextField("sample@gmail.com", text: $mailText)
-                                    .font(.custom("Poppins-Regular", size: 10))
-                                
-                            }
-                                .padding()
-                    )
+                    RegistrationTextField(text: $mailText, image: "envelope", titleKey: "Email")
                     
-                    Capsule()
-                        .frame(width: UIScreen.main.bounds.size.width*0.8, height: 50)
-                        .foregroundColor(Color("White"))
-                        .shadow(color: Color("White panel shadow"), radius: 4, x: 0, y: 4)
-                        .overlay(
-                            HStack {
-                                Image(systemName: "person")
-                                    .foregroundColor(Color("Gray"))
-                                
-                                TextField("Abdulloh", text: $nameText)
-                                    .font(.custom("Poppins-Regular", size: 10))
-                                
-                            }
-                                .padding()
-                        )
+                    RegistrationTextField(text: $nameText, image: "person", titleKey: "Name")
                     
-                    Capsule()
-                        .frame(width: UIScreen.main.bounds.size.width*0.8, height: 50)
-                        .foregroundColor(Color("White"))
-                        .shadow(color: Color("White panel shadow"), radius: 4, x: 0, y: 4)
-                        .overlay(
-                            HStack {
-                                Image(systemName: "person")
-                                    .foregroundColor(Color("Gray"))
-                                
-                                TextField("Bahromjonov", text: $surnameText)
-                                    .font(.custom("Poppins-Regular", size: 10))
-                                
-                            }
-                                .padding()
-                        )
+                    RegistrationTextField(text: $surnameText, image: "person", titleKey: "Surname")
                     
-                    Capsule()
-                        .frame(width: UIScreen.main.bounds.size.width*0.8, height: 50)
-                        .foregroundColor(Color("White"))
-                        .shadow(color: Color("White panel shadow"), radius: 4, x: 0, y: 4)
-                        .overlay(
-                            HStack {
-                                Image(systemName: "key")
-                                    .foregroundColor(Color("Gray"))
-                                
-                                TextField("password", text: $password)
-                                    .font(.custom("Poppins-Regular", size: 10))
-                                
-                            }
-                                .padding()
-                        )
+                    RegistrationTextField(text: $password, image: "key", titleKey: "Password")
+                    
                     Capsule()
                         .frame(width: UIScreen.main.bounds.size.width*0.8, height: 50)
                         .foregroundColor(Color("White"))
@@ -129,12 +78,18 @@ struct SignInView: View {
                     }
                 }
             }
-            
+            .frame(width: UIScreen.main.bounds.size.width*0.9, height: 500)
         }
-        .frame(width: UIScreen.main.bounds.size.width*0.9, height: 500)
+        .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+        .edgesIgnoringSafeArea(.all)
+        .background(
+            RegistrationBackground(title: "Sign In")
+        )
+        
         .fullScreenCover(isPresented: $showContentView) {
             ContentView()
         }
+        
     }
 }
 
@@ -142,9 +97,5 @@ struct SingInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView()
             //.preferredColorScheme(.dark)
-            .padding()
-            .background(Color("Background"))
-            .previewLayout(.sizeThatFits)
-            
     }
 }

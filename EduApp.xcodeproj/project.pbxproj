@@ -19,6 +19,9 @@
 		E54931EC279F301F008B7EF0 /* Biology.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E54931E6279F301F008B7EF0 /* Biology.pdf */; };
 		E54931EE279F3111008B7EF0 /* Algebra.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E54931ED279F3111008B7EF0 /* Algebra.pdf */; };
 		E54931F0279F3117008B7EF0 /* Geometry.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E54931EF279F3117008B7EF0 /* Geometry.pdf */; };
+		E5A97CB627AABC150009DA79 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A97CB527AABC150009DA79 /* PickerView.swift */; };
+		E5A97CB827AAC7710009DA79 /* RegistrationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A97CB727AAC7710009DA79 /* RegistrationTextField.swift */; };
+		E5A97CBA27AADD4B0009DA79 /* RegistrationBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A97CB927AADD4B0009DA79 /* RegistrationBackground.swift */; };
 		FC3345C6278EDB710077B95C /* SubjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345C5278EDB710077B95C /* SubjectCardView.swift */; };
 		FC3345CA278F07D70077B95C /* SubjectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345C9278F07D70077B95C /* SubjectsModel.swift */; };
 		FC3345CC27918C350077B95C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345CB27918C350077B95C /* DetailView.swift */; };
@@ -62,6 +65,9 @@
 		E54931E6279F301F008B7EF0 /* Biology.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Biology.pdf; sourceTree = "<group>"; };
 		E54931ED279F3111008B7EF0 /* Algebra.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Algebra.pdf; sourceTree = "<group>"; };
 		E54931EF279F3117008B7EF0 /* Geometry.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Geometry.pdf; sourceTree = "<group>"; };
+		E5A97CB527AABC150009DA79 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		E5A97CB727AAC7710009DA79 /* RegistrationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTextField.swift; sourceTree = "<group>"; };
+		E5A97CB927AADD4B0009DA79 /* RegistrationBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationBackground.swift; sourceTree = "<group>"; };
 		FC3345C5278EDB710077B95C /* SubjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCardView.swift; sourceTree = "<group>"; };
 		FC3345C9278F07D70077B95C /* SubjectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsModel.swift; sourceTree = "<group>"; };
 		FC3345CB27918C350077B95C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -124,6 +130,9 @@
 				E54931DB279EE0B4008B7EF0 /* PDFReader.swift */,
 				FCEE41EA278CAADB00E313E1 /* ContentView.swift */,
 				3BB66C1627A5BCB500C4A776 /* SignInView.swift */,
+				E5A97CB927AADD4B0009DA79 /* RegistrationBackground.swift */,
+				E5A97CB727AAC7710009DA79 /* RegistrationTextField.swift */,
+				E5A97CB527AABC150009DA79 /* PickerView.swift */,
 				3BB569CC27A85B23007FC166 /* PickerTextField.swift */,
 			);
 			path = View;
@@ -326,13 +335,16 @@
 				FC3345CE2791A2BB0077B95C /* NavigationDetailView.swift in Sources */,
 				FC3345CC27918C350077B95C /* DetailView.swift in Sources */,
 				FC524A80278E16E7009C93D3 /* SearchBar.swift in Sources */,
+				E5A97CBA27AADD4B0009DA79 /* RegistrationBackground.swift in Sources */,
 				FCEE41E9278CAADB00E313E1 /* EduAppApp.swift in Sources */,
 				FC524A3B278DC9F3009C93D3 /* NavigationBar.swift in Sources */,
 				FC3345CA278F07D70077B95C /* SubjectsModel.swift in Sources */,
+				E5A97CB827AAC7710009DA79 /* RegistrationTextField.swift in Sources */,
 				E54931DC279EE0B4008B7EF0 /* PDFReader.swift in Sources */,
 				3BB66C1727A5BCB500C4A776 /* SignInView.swift in Sources */,
 				FC3345C6278EDB710077B95C /* SubjectCardView.swift in Sources */,
 				3BB569CD27A85B23007FC166 /* PickerTextField.swift in Sources */,
+				E5A97CB627AABC150009DA79 /* PickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
