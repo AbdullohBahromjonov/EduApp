@@ -13,4 +13,5 @@ struct SubjectsModel: Identifiable {
     let name: String
     let grade: Int
     let color: String
+    let books: [String]
 }
