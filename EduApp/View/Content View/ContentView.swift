@@ -35,8 +35,6 @@ struct ContentView: View {
                 Image("Frame")
                     .aspectRatio(contentMode: .fill)
                     .frame(width: UIScreen.main.bounds.size.width*0.9, height: UIScreen.main.bounds.size.width*0.65)
-                    
-
                 
                 HStack {
                     Text(Date().dayOfTheWeek())
@@ -48,20 +46,8 @@ struct ContentView: View {
                 .padding(.horizontal, 30)
                 
                 //VStack {
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(subjects.filter({"\($0)".contains(text) || text.isEmpty})) { subject in
-                            SubjectCardView(subject: .constant(subject))
-                                .onTapGesture {
-                                    showDetail.toggle()
-                                    selectedSubject = subject
-                                }
-                                .fullScreenCover(isPresented: $showDetail) {
-                                    LibraryView(subject: $selectedSubject)
-                                }
-                        }
-                        
-                    }
-                    .padding(.horizontal)
+                SubjectsGridView()
+                    .padding(.bottom)
                     
                 Spacer()
             }

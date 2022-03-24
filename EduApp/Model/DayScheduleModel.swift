@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct DayScheduleModel {
+struct DayScheduleModel: Identifiable {
     let id: Int
     let weekDay: String
-    let subjects: [String]
+    let subjects: [SubjectsModel]
 }

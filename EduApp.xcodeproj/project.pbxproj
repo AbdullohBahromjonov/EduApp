@@ -27,8 +27,16 @@
 		E5A97CB627AABC150009DA79 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A97CB527AABC150009DA79 /* PickerView.swift */; };
 		E5A97CB827AAC7710009DA79 /* RegistrationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A97CB727AAC7710009DA79 /* RegistrationTextField.swift */; };
 		E5A97CBA27AADD4B0009DA79 /* RegistrationBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A97CB927AADD4B0009DA79 /* RegistrationBackground.swift */; };
+		E5B697F727F1FF6900410782 /* TodaysSubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B697F627F1FF6900410782 /* TodaysSubjects.swift */; };
 		E5E98A2C27EE070100F16F6A /* DayScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E98A2B27EE070100F16F6A /* DayScheduleModel.swift */; };
 		E5E98A2E27EE0B5900F16F6A /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E98A2D27EE0B5900F16F6A /* ScheduleData.swift */; };
+		E5FBDC2827F380E2008A9C62 /* Technology.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5FBDC2727F380E2008A9C62 /* Technology.pdf */; };
+		E5FBDC2A27F380EB008A9C62 /* Uzbek.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5FBDC2927F380EB008A9C62 /* Uzbek.pdf */; };
+		E5FBDC2C27F380F2008A9C62 /* Informatics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5FBDC2B27F380F2008A9C62 /* Informatics.pdf */; };
+		E5FBDC2E27F380FB008A9C62 /* Drawing.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5FBDC2D27F380FB008A9C62 /* Drawing.pdf */; };
+		E5FBDC3027F38102008A9C62 /* Laws.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5FBDC2F27F38102008A9C62 /* Laws.pdf */; };
+		E5FBDC3227F3810C008A9C62 /* Economics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5FBDC3127F3810C008A9C62 /* Economics.pdf */; };
+		E5FBDC3427F38113008A9C62 /* Geography.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5FBDC3327F38113008A9C62 /* Geography.pdf */; };
 		FC3345C6278EDB710077B95C /* SubjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345C5278EDB710077B95C /* SubjectCardView.swift */; };
 		FC3345CA278F07D70077B95C /* SubjectsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345C9278F07D70077B95C /* SubjectsModel.swift */; };
 		FC3345CC27918C350077B95C /* BookPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3345CB27918C350077B95C /* BookPDF.swift */; };
@@ -80,8 +88,16 @@
 		E5A97CB527AABC150009DA79 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		E5A97CB727AAC7710009DA79 /* RegistrationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTextField.swift; sourceTree = "<group>"; };
 		E5A97CB927AADD4B0009DA79 /* RegistrationBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationBackground.swift; sourceTree = "<group>"; };
+		E5B697F627F1FF6900410782 /* TodaysSubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysSubjects.swift; sourceTree = "<group>"; };
 		E5E98A2B27EE070100F16F6A /* DayScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayScheduleModel.swift; sourceTree = "<group>"; };
 		E5E98A2D27EE0B5900F16F6A /* ScheduleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
+		E5FBDC2727F380E2008A9C62 /* Technology.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Technology.pdf; sourceTree = "<group>"; };
+		E5FBDC2927F380EB008A9C62 /* Uzbek.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Uzbek.pdf; sourceTree = "<group>"; };
+		E5FBDC2B27F380F2008A9C62 /* Informatics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Informatics.pdf; sourceTree = "<group>"; };
+		E5FBDC2D27F380FB008A9C62 /* Drawing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Drawing.pdf; sourceTree = "<group>"; };
+		E5FBDC2F27F38102008A9C62 /* Laws.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Laws.pdf; sourceTree = "<group>"; };
+		E5FBDC3127F3810C008A9C62 /* Economics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Economics.pdf; sourceTree = "<group>"; };
+		E5FBDC3327F38113008A9C62 /* Geography.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Geography.pdf; sourceTree = "<group>"; };
 		FC3345C5278EDB710077B95C /* SubjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCardView.swift; sourceTree = "<group>"; };
 		FC3345C9278F07D70077B95C /* SubjectsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsModel.swift; sourceTree = "<group>"; };
 		FC3345CB27918C350077B95C /* BookPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPDF.swift; sourceTree = "<group>"; };
@@ -129,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				FCEE41EA278CAADB00E313E1 /* ContentView.swift */,
+				E5B697F627F1FF6900410782 /* TodaysSubjects.swift */,
 				FC524A3A278DC9F2009C93D3 /* NavigationBar.swift */,
 				FC524A7F278E16E7009C93D3 /* SearchBar.swift */,
 				FC3345C5278EDB710077B95C /* SubjectCardView.swift */,
@@ -183,6 +200,13 @@
 		3BB66C1527A5BC4A00C4A776 /* Books */ = {
 			isa = PBXGroup;
 			children = (
+				E5FBDC3327F38113008A9C62 /* Geography.pdf */,
+				E5FBDC3127F3810C008A9C62 /* Economics.pdf */,
+				E5FBDC2F27F38102008A9C62 /* Laws.pdf */,
+				E5FBDC2D27F380FB008A9C62 /* Drawing.pdf */,
+				E5FBDC2B27F380F2008A9C62 /* Informatics.pdf */,
+				E5FBDC2927F380EB008A9C62 /* Uzbek.pdf */,
+				E5FBDC2727F380E2008A9C62 /* Technology.pdf */,
 				3BC72E1C27E4ED9C00046D68 /* Literature part 1.pdf */,
 				3BC72E1E27E4EDA500046D68 /* Literature part 2.pdf */,
 				3BC72E1827E4EB8800046D68 /* World History.pdf */,
@@ -329,28 +353,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FBDC3427F38113008A9C62 /* Geography.pdf in Resources */,
 				FC524A55278DE344009C93D3 /* Roboto-Thin.ttf in Resources */,
+				E5FBDC2827F380E2008A9C62 /* Technology.pdf in Resources */,
 				FC524A52278DE344009C93D3 /* LICENSE.txt in Resources */,
 				FC524A56278DE344009C93D3 /* Roboto-Black.ttf in Resources */,
 				3BC72E1927E4EB8800046D68 /* World History.pdf in Resources */,
 				FC524A76278DE34D009C93D3 /* Poppins-Regular.ttf in Resources */,
 				FC524A54278DE344009C93D3 /* Roboto-Bold.ttf in Resources */,
 				FC524A73278DE34D009C93D3 /* Poppins-ExtraBold.ttf in Resources */,
+				E5FBDC2C27F380F2008A9C62 /* Informatics.pdf in Resources */,
 				FC524A6B278DE34D009C93D3 /* Poppins-ExtraLight.ttf in Resources */,
 				FC524A75278DE34D009C93D3 /* OFL.txt in Resources */,
 				E54931EE279F3111008B7EF0 /* Algebra.pdf in Resources */,
 				E54931E9279F301F008B7EF0 /* English.pdf in Resources */,
+				E5FBDC3027F38102008A9C62 /* Laws.pdf in Resources */,
 				E54931E8279F301F008B7EF0 /* Russian.pdf in Resources */,
 				FCEE41F0278CAADD00E313E1 /* Preview Assets.xcassets in Resources */,
 				FC524A78278DE34D009C93D3 /* Poppins-Bold.ttf in Resources */,
 				FCEE41ED278CAADD00E313E1 /* Assets.xcassets in Resources */,
 				FC524A4C278DE344009C93D3 /* Roboto-Regular.ttf in Resources */,
 				E54931F0279F3117008B7EF0 /* Geometry.pdf in Resources */,
+				E5FBDC3227F3810C008A9C62 /* Economics.pdf in Resources */,
 				FC524A7A278DE34D009C93D3 /* Poppins-Thin.ttf in Resources */,
 				FC524A6F278DE34D009C93D3 /* Poppins-Light.ttf in Resources */,
+				E5FBDC2A27F380EB008A9C62 /* Uzbek.pdf in Resources */,
 				E54931E7279F301F008B7EF0 /* Physics.pdf in Resources */,
 				E54931EC279F301F008B7EF0 /* Biology.pdf in Resources */,
 				FC524A7C278DE34D009C93D3 /* Poppins-Italic.ttf in Resources */,
+				E5FBDC2E27F380FB008A9C62 /* Drawing.pdf in Resources */,
 				FC524A7B278DE34D009C93D3 /* Poppins-SemiBold.ttf in Resources */,
 				FC524A70278DE34D009C93D3 /* Poppins-Medium.ttf in Resources */,
 				3BC72E1D27E4ED9C00046D68 /* Literature part 1.pdf in Resources */,
@@ -388,6 +419,7 @@
 				3BB66C1727A5BCB500C4A776 /* SignInView.swift in Sources */,
 				FC3345C6278EDB710077B95C /* SubjectCardView.swift in Sources */,
 				E5A97CB627AABC150009DA79 /* PickerView.swift in Sources */,
+				E5B697F727F1FF6900410782 /* TodaysSubjects.swift in Sources */,
 				E5E98A2C27EE070100F16F6A /* DayScheduleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

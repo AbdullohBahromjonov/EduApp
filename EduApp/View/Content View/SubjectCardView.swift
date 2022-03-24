@@ -23,6 +23,8 @@ struct SubjectCardView: View {
                     .font(.custom("Poppins-SemiBold", size: 14))
                     .foregroundColor(Color("Gray"))
                     .padding(.top, 6)
+                    .padding(.horizontal, 10)
+                    .multilineTextAlignment(.center)
                 
                 Text("Grade: \(subject.grade)")
                     .font(.custom("Poppins-SemiBold", size: 11))
