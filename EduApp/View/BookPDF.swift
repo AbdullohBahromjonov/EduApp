@@ -8,15 +8,31 @@
 import SwiftUI
 
 struct BookPDF: View {
+    @Environment(\.presentationMode) var presentationMode
     @Binding var book: String
     @Binding var color: String
     
     var body: some View {
         VStack {
-            NavigationDetailView(heading: .constant(book), color: .constant(color))
-                .padding(.bottom)
+            Button(
+                action: {
+                    presentationMode.wrappedValue.dismiss()
+                },
+                label: {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                            .font(.system(size: 25, weight: .medium))
+                            .padding(.leading)
+                            .padding(.trailing, -9)
+                        Text("Done")
+                        
+                        Spacer()
+                    }
+                }
+            )
             
             PDFReader(book: .constant(book))
+                .padding(.top, 10)
             
             Spacer()
         }

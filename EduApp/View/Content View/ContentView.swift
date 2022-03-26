@@ -7,14 +7,21 @@
 
 import SwiftUI
 
+extension Date {
+    func dayOfTheWeek() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE"
+        return dateFormatter.string(from: self).capitalized
+    }
+}
+
 struct ContentView: View {
     @State var text = ""
     @State var showDetail = false
     @State var selectedSubject = SubjectsModel(id: 0, image: "", name: "", grade: 0, color: "", books: [])
     
     let columns = [
-        GridItem(.flexible()),
-        GridItem(.flexible())
+        GridItem(.adaptive(minimum: 144))
     ]
     
     var body: some View {
@@ -32,7 +39,7 @@ struct ContentView: View {
 
                 
                 HStack {
-                    Text("Subjects")
+                    Text(Date().dayOfTheWeek())
                         .font(.custom("Poppins-bold", size: 23.11))
                         .foregroundColor(Color("Black"))
                     
@@ -40,7 +47,7 @@ struct ContentView: View {
                 }
                 .padding(.horizontal, 30)
                 
-                VStack {
+                //VStack {
                     LazyVGrid(columns: columns, spacing: 20) {
                         ForEach(subjects.filter({"\($0)".contains(text) || text.isEmpty})) { subject in
                             SubjectCardView(subject: .constant(subject))
@@ -52,12 +59,10 @@ struct ContentView: View {
                                     LibraryView(subject: $selectedSubject)
                                 }
                         }
+                        
                     }
-                    .frame(width: UIScreen.main.bounds.size.width*0.9)
+                    .padding(.horizontal)
                     
-                }
-                
-                
                 Spacer()
             }
             
